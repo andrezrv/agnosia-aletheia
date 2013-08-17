@@ -1,0 +1,18 @@
+/*
+Theme Name: Al&eacute;theia
+Description: Child theme for the Agnosia theme framework, based in the Agnosia Starter Kit. Optimized for readability.
+Author: Andr&eacute;s Villarreal
+Template: agnosia                             
+Version: 1.0
+*/
+
+/**
+ * NOTICE: This file is part of the Alétheia child theme for the Agnosia theme framework.
+ * Please edit CSS through /css/agnosia-extra-styles.css.
+ *
+ * This file should only handle required WordPress classes.
+ * 
+ * @package Aletheia
+ */
+
+@import url("../agnosia/style.css");

@@ -1,0 +1,796 @@
+@import url(http://fonts.googleapis.com/css?family=Alice);
+/**
+ * NOTICE: This file is part of the Alétheia child theme for the Agnosia theme framework.
+ * Please edit CSS through /css/agnosia-extra-styles.css.
+ *
+ * This file should only handle styles for the Alétheia child theme.
+ * 
+ * @package Aletheia
+ */
+body {
+  background-color: #ededed;
+  color: #2e3639;
+}
+pre {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+a {
+  transition: all 0.5s;
+}
+a:hover {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+blockquote {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+  border-left: 5px solid #e37373;
+  color: #555555;
+  margin: 25px 0;
+  padding: 5px 15px;
+}
+blockquote cite {
+  font-weight: bold;
+}
+.navbar-inner {
+  border: none;
+}
+body.small header#header {
+  margin-bottom: 25px;
+}
+body.small header#header #top-navbar .navbar-inner .container {
+  padding: 0;
+}
+body.small header#header #top-navbar .navbar-inner .container .btn-navbar {
+  margin-right: 0;
+}
+body.small header#header #top-navbar .navbar-inner .container .brand {
+  padding: 0;
+}
+body.small header#header #branding {
+  display: none;
+}
+body.page-template-page-large-header-php #branding {
+  display: none;
+}
+body.page-template-page-large-header-php #before-container-html {
+  background-attachment: fixed;
+  background-image: url('../img/bg.jpg');
+  background-position: bottom center;
+  background-size: 100%;
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 0 -2px 15px -5px rgba(0, 0, 0, 0.3) inset;
+  margin-bottom: 25px;
+  min-height: 380px;
+}
+body.page-template-page-large-header-php #before-container-html h2 {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+}
+body.page-template-page-large-header-php #before-container-html h2 a {
+  color: #2e3639;
+}
+body.page-template-page-large-header-php #before-container-html .page-header {
+  border: none;
+}
+body.wide #branding .navbar-inner,
+body.large #branding .navbar-inner,
+body.medium #branding .navbar-inner {
+  background-attachment: fixed;
+  background-image: url('../img/bg.jpg');
+  background-position: bottom center;
+  background-size: 100%;
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 0 -2px 15px -5px rgba(0, 0, 0, 0.3) inset;
+  margin-bottom: 25px;
+  min-height: 380px;
+}
+body.wide #branding .navbar .brand,
+body.large #branding .navbar .brand,
+body.medium #branding .navbar .brand {
+  float: none;
+  margin: 120px 0;
+  text-align: center;
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+}
+body.wide #branding .navbar .brand h1,
+body.large #branding .navbar .brand h1,
+body.medium #branding .navbar .brand h1 {
+  font-weight: normal;
+  margin: 10px;
+}
+body.wide #branding .navbar .brand h1 a,
+body.large #branding .navbar .brand h1 a,
+body.medium #branding .navbar .brand h1 a {
+  color: #ffffff;
+  font-size: 52px;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.35);
+}
+body.wide #branding .navbar .brand h2,
+body.large #branding .navbar .brand h2,
+body.medium #branding .navbar .brand h2 {
+  color: #ffffff;
+  background-color: rgba(204, 0, 0, 0.5);
+  display: inline;
+  font-size: 24px;
+  padding: 3px 10px;
+  text-shadow: 0 1px 0 #2e3639;
+}
+body.wide #branding .nav-collapse,
+body.large #branding .nav-collapse,
+body.medium #branding .nav-collapse,
+body.wide #branding header#header .nav-collapse,
+body.large #branding header#header .nav-collapse,
+body.medium #branding header#header .nav-collapse {
+  float: none;
+}
+body.wide #branding.not-frontpage .navbar-inner,
+body.large #branding.not-frontpage .navbar-inner,
+body.medium #branding.not-frontpage .navbar-inner {
+  margin-bottom: -355px;
+}
+body.wide #branding.not-frontpage .navbar-inner .container,
+body.large #branding.not-frontpage .navbar-inner .container,
+body.medium #branding.not-frontpage .navbar-inner .container {
+  display: none;
+}
+body.wide.home #top-navbar .brand,
+body.large.home #top-navbar .brand,
+body.medium.home #top-navbar .brand {
+  display: none;
+}
+header#header {
+  background-color: transparent;
+}
+header #top-navbar {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.23);
+}
+header #top-navbar .brand h1 {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+}
+header #top-navbar .brand h1 a {
+  background-color: #e37373;
+  color: #ffffff;
+  display: block;
+  padding: 0 15px;
+  text-shadow: 0 1px 0 #2e3639;
+}
+header .sub-menu.dropdown-menu {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: medium none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
+}
+header .sub-menu:not(.dropdown-menu) li {
+  padding: 0;
+}
+header .sub-menu:not(.dropdown-menu) li a:hover {
+  background-image: linear-gradient(#e37373, #e37373);
+}
+header .sub-menu:not(.dropdown-menu) li:hover {
+  background-color: #ffffff;
+}
+article {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: auto;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
+  line-height: 24px;
+  overflow: visible;
+  padding: 0;
+}
+article ul li,
+article ol li {
+  line-height: 24px;
+}
+article header {
+  border-bottom: 1px solid #ededed;
+  margin: 0;
+  padding: 25px 25px 20px;
+}
+article header h2 {
+  font-size: 43px;
+  margin-bottom: -1px;
+}
+article .gravatar {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
+}
+article .post-thumbnail {
+  margin: -1px 0 0;
+}
+article .entry {
+  margin: 0;
+  padding: 20px 25px 10px;
+}
+article .entry.image .wp-caption:first-child,
+article .entry.image > img {
+  padding: 0;
+  margin: -20px -25px -11px;
+}
+article .entry.image .wp-caption:first-child + *,
+article .entry.image > img + * {
+  margin-top: 10px;
+}
+article .entry.image .wp-caption-dd {
+  margin-bottom: 20px;
+}
+article .entry.image > p:first-child {
+  margin: -20px -25px 15px;
+}
+article .entry.image > p:first-child > img {
+  width: available;
+  width: -webkit-available;
+  width: -moz-available;
+  width: -ms-available;
+  width: -o-available;
+  min-width: 100%;
+}
+article .entry.video iframe:first-child,
+article .entry.video embed:first-child,
+article .entry.video .video-player {
+  width: available;
+  width: -webkit-available;
+  width: -moz-available;
+  width: -ms-available;
+  width: -o-available;
+  margin: -20px -25px 0 -25px;
+}
+article .entry.video .video-player {
+  margin-bottom: 20px;
+}
+article .entry.audio .wp-audio-shortcode {
+  margin: 0 -25px -10px;
+}
+article .entry.audio .wp-audio-shortcode + * {
+  margin-top: 10px;
+}
+article .entry.quote {
+  padding: 20px 25px 15px;
+}
+article .entry.quote blockquote {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+article .entry.quote blockquote p {
+  font-size: 24px;
+}
+article .entry.quote blockquote cite {
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 15px;
+  padding: 0;
+  text-align: right;
+}
+article .entry.status {
+  overflow: auto;
+}
+article .entry.status .gravatar {
+  margin-bottom: 10px;
+}
+article .entry.status,
+article .entry.aside {
+  background-color: #fdfdfd;
+}
+article .entry.status .status h4 {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+}
+article .post-pages {
+  padding: 0 25px;
+}
+article .post-pages .pagination {
+  margin: 0 0 10px;
+}
+article #authorarea {
+  background-color: transparent;
+  border-top: 1px solid #ededed;
+  margin: 15px -25px 0;
+  padding: 15px 25px;
+}
+article #authorarea .gravatar img {
+  margin: 0;
+}
+article #authorarea .authorinfo h3 {
+  margin: 0 0 5px;
+}
+article #post-navigation-bottom {
+  border-top: 1px solid #ededed;
+  margin: 0 -25px;
+  padding: 15px 25px 0;
+}
+article h1,
+article h2,
+article h3 {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+  margin: 0;
+}
+article h1 a,
+article h2 a {
+  color: #2e3639;
+}
+article h1 a:hover,
+article h2 a:hover {
+  color: #cc0000;
+}
+article .info {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+}
+article .info > .author {
+  color: #777777;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+article .metadata {
+  line-height: 24px;
+}
+article .metadata.top section,
+article .metadata.bottom section {
+  margin-right: 15px;
+}
+article .metadata section {
+  background-color: #e37373;
+  color: #ffffff;
+  font-size: 15px;
+  text-shadow: 0 1px 0 #2e3639;
+  line-height: 28px;
+  margin-bottom: 15px;
+  padding: 0px 10px;
+}
+article .metadata section a {
+  color: #ffffff;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.48);
+}
+article .metadata section a:hover {
+  border-bottom: 1px dotted #ffffff;
+}
+article .metadata section:before {
+  background-image: url("../../agnosia/img/glyphicons-halflings-white.png");
+  content: "";
+  float: left;
+  height: 16px;
+  line-height: 30px;
+  margin-right: 5px;
+  margin-top: 7px;
+  position: relative;
+  width: 16px;
+}
+article .metadata section.author:before {
+  background-position: -167px 0;
+}
+article .metadata section.date:before {
+  background-position: 278px 63px;
+}
+article .metadata section.comments:before {
+  background-position: 229px 63px;
+}
+article .metadata section.tags:before {
+  background-position: -24px -47px;
+}
+article .metadata section.categories:before {
+  background-position: 60px 62px;
+}
+article .metadata section.permalink:before {
+  background-position: -71px 15px;
+}
+article .edit-entry {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+  width: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: -ms-fit-content;
+  width: -o-fit-content;
+  background-color: #e37373;
+  display: block;
+  font-size: 15px;
+  line-height: 28px;
+  padding: 0px 10px;
+  text-shadow: 0 1px 0 #2e3639;
+}
+article .edit-entry a {
+  color: #ffffff;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.48);
+}
+article .edit-entry a:hover {
+  border-bottom: 1px dotted #ffffff;
+}
+article .edit-entry:before {
+  background-image: url("../../agnosia/img/glyphicons-halflings-white.png");
+  content: "";
+  float: left;
+  height: 16px;
+  line-height: 30px;
+  margin-right: 5px;
+  margin-top: 7px;
+  position: relative;
+  width: 16px;
+  background-position: 0 -72px;
+}
+article footer {
+  border-top: 1px solid #ededed;
+  padding: 15px 25px;
+}
+#posts-container.home article.sticky {
+  border-top: 5px solid #e37373;
+}
+.search-data,
+#archive-container > .entry {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: auto;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
+  padding: 15px 25px 10px;
+}
+.search-data h1,
+#archive-container > .entry h1,
+.search-data h2,
+#archive-container > .entry h2,
+.search-data h3,
+#archive-container > .entry h3,
+.search-data h4,
+#archive-container > .entry h4 {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+  margin: 0;
+}
+#comments-container {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: auto;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
+  padding: 25px;
+}
+#comments-container h1,
+#comments-container h2,
+#comments-container h3 {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+  margin: 0;
+}
+#comments-container .comment-author.vcard {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+}
+#comments-container .comment-author.vcard a {
+  color: #2e3639;
+}
+#comments-container .commentlist > .comment .comment-body {
+  margin-top: 15px;
+}
+.sidebar .widget {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: auto;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
+  overflow: visible;
+}
+.sidebar .widget h2 {
+  background-color: #2e3639;
+  color: #ffffff;
+  margin: 0 -16px 15px;
+  padding: 7px 15px 4px;
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+}
+.sidebar .widget h2:first-child {
+  margin-top: -16px;
+}
+.sidebar .widget ul {
+  list-style: none;
+  margin: 0;
+}
+.sidebar .widget ul li {
+  border-bottom: 1px solid #ededed;
+  padding: 10px 0;
+}
+.sidebar .widget ul li:last-child {
+  border-bottom: none;
+}
+.sidebar .widget ul.children {
+  padding-left: 10px;
+}
+.sidebar .widget > ul {
+  margin-top: -16px;
+}
+.sidebar .widget > ul li:hover {
+  background-color: #F9F9F9;
+}
+.sidebar .widget .jetpack-image-container {
+  width: available;
+  width: -webkit-available;
+  width: -moz-available;
+  width: -ms-available;
+  width: -o-available;
+  margin: -15px;
+}
+.sidebar .widget.widget_facebook_likebox h2 a {
+  color: #ffffff;
+}
+.sidebar .widget.widget_facebook_likebox iframe {
+  width: 100% !important;
+}
+.sidebar .widget.widget_search {
+  overflow: hidden;
+}
+footer#footer {
+  background-color: #2e3639;
+  color: #848889;
+}
+footer#footer h1,
+footer#footer h2,
+footer#footer h3,
+footer#footer h4,
+footer#footer h5,
+footer#footer h6 {
+  color: #ffffff;
+}
+footer#footer h1,
+footer#footer h2,
+footer#footer h4 {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+}
+footer#footer ul {
+  list-style: none;
+}
+footer#footer ul:not(.children) {
+  margin: 0;
+}
+footer#footer a {
+  color: #e37373;
+}
+footer#footer table#wp-calendar {
+  background-color: transparent;
+}
+footer#footer table#wp-calendar tbody td,
+footer#footer table#wp-calendar thead th {
+  border-bottom: 1px solid #848889;
+}
+footer#footer .widget {
+  margin-bottom: 25px;
+}
+footer#footer .widget ul:not(.children) > li {
+  border-bottom: 1px solid #555555;
+  padding: 10px 0;
+}
+footer#footer .widget ul:not(.children) > li:last-child {
+  border-bottom: none;
+}
+footer#footer .widget ul.sub-menu li {
+  border: none;
+  margin-left: 15px;
+  padding: 5px 15px 0 0;
+}
+footer#footer .widget ul li {
+  padding: 10px 0 0;
+}
+hr.separator {
+  display: none;
+}
+.navbar-search {
+  width: available;
+  width: -webkit-available;
+  width: -moz-available;
+  width: -ms-available;
+  width: -o-available;
+}
+.navbar-search input {
+  width: available;
+  width: -webkit-available;
+  width: -moz-available;
+  width: -ms-available;
+  width: -o-available;
+}
+h2 a.rsswidget {
+  color: #ffffff;
+}
+li .rsswidget {
+  font-weight: bold;
+}
+li .rss-date {
+  color: #848889;
+  font-weight: bold;
+  font-size: 12px;
+}
+li .rssSummary {
+  font-size: 13px;
+}
+li .rssSummary + cite {
+  font-weight: bold;
+  font-size: 13px;
+}
+.alignleft {
+  margin-bottom: 20px;
+}
+.btn {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+  border: none;
+  font-size: 16px;
+}
+.btn.more-link {
+  background-color: #e37373;
+  background-image: none;
+  text-shadow: 0 1px 0 #2e3639;
+  padding: 5px 12px 5px 15px;
+}
+.btn.more-link:after {
+  background-image: url("../../agnosia/img/glyphicons-halflings-white.png");
+  content: "";
+  float: left;
+  height: 16px;
+  line-height: 30px;
+  margin-right: 5px;
+  margin-top: 7px;
+  position: relative;
+  width: 16px;
+  float: right;
+  background-position: 15px -73px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 4px;
+}
+.btn-primary {
+  margin: 0 0 10px;
+}
+.btn.btn-navbar {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  margin-top: 6px;
+}
+.pager .previous a,
+.pager .next a {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+  background-color: #e37373;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  text-shadow: 0 1px 0 #2e3639;
+  padding: 5px 0 5px 0;
+}
+.pager .previous a:hover,
+.pager .next a:hover,
+.pager .previous a:active,
+.pager .next a:active,
+.pager .previous a:focus,
+.pager .next a:focus {
+  background-color: #e37373;
+}
+.pager .previous a {
+  padding-left: 5px;
+  padding-right: 15px;
+}
+.pager .next a {
+  padding-left: 15px;
+  padding-right: 10px;
+}
+.pager .previous a:before,
+.pager .next a:after {
+  background-image: url("../../agnosia/img/glyphicons-halflings-white.png");
+  content: "";
+  float: left;
+  height: 16px;
+  line-height: 30px;
+  margin-right: 5px;
+  margin-top: 7px;
+  position: relative;
+  width: 16px;
+}
+.pager .previous a:before {
+  background-position: 41px -73px;
+  margin-left: 0;
+  margin-top: 4px;
+}
+.pager .next a:after {
+  float: right;
+  background-position: 15px -73px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 4px;
+}
+.navbar .navbar-search .search-query {
+  border: none;
+  box-shadow: none;
+  margin-top: 1px;
+}
+.gallery-item .attachment-thumbnail {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  background-image: linear-gradient(#e37373, #e37373);
+}
+body.medium #content .main,
+body.small #content .main {
+  background-color: transparent;
+}
+body.small .metadata section {
+  float: left;
+}
+.navbar-inverse .nav-collapse .navbar-form,
+.navbar-inverse .nav-collapse .navbar-search {
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+}
+.navbar-inverse .nav-collapse .nav > li > a,
+.navbar-inverse .nav-collapse .dropdown-menu a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+button.btn.btn-large,
+input.btn.btn-large[type="submit"] {
+  background-color: #e37373;
+  background-image: linear-gradient(#e37373, #e37373);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+}
+body.wide .dropdown-toggle + .dropdown-menu,
+body.large .dropdown-toggle + .dropdown-menu {
+  margin-top: 0;
+  padding: 0;
+}
+#credits .container {
+  font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
+  font-weight: normal;
+  background-color: #1e2629;
+  color: #848889;
+  font-size: 14px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+#credits .container a {
+  color: #ffffff;
+}
+#credits .container .copyright {
+  float: left;
+}
+#credits .container .aletheia,
+#credits .container .wordpress {
+  display: block;
+  font-size: 12px;
+}
+.Glyph {
+  background-image: url("../../agnosia/img/glyphicons-halflings-white.png");
+  content: "";
+  float: left;
+  height: 16px;
+  line-height: 30px;
+  margin-right: 5px;
+  margin-top: 7px;
+  position: relative;
+  width: 16px;
+}
