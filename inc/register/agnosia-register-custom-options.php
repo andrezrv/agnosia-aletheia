@@ -1,7 +1,7 @@
 <?php
 
 /**
- * NOTICE: This file is part of the Alétheia child theme for the Agnosia framework.
+ * NOTICE: This file is part of the Alétheia child theme for the Agnosia Theme Framework.
  * Please don't modify this file. If you need to perform modifications, do it through /inc/utils/agnosia-extra-functions.php
  *
  * This file handles custom options for your child theme.
@@ -11,11 +11,10 @@
  * For further information, visit @link http://codex.wordpress.org/Function_Reference/add_action and @link http://codex.wordpress.org/Function_Reference/add_filter.
  * 
  * @package Alétheia
+ * 
+ * @author andrezrv
  */
 
-?>
-
-<?php
 
 /**
  * The following lines are commented by default in order to prevent the execution of unnecessary processes,
@@ -80,5 +79,3 @@ function agnosia_aletheia_register_options() {
 add_action( 'agnosia_before_setup', 'agnosia_aletheia_unregister_options' );
 add_action( 'agnosia_before_setup', 'agnosia_aletheia_reset_options_defaults' );
 add_action( 'agnosia_before_setup', 'agnosia_aletheia_register_options' );
-
-?>

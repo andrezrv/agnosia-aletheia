@@ -6,6 +6,8 @@
  * This file should only handle styles for the Alétheia child theme.
  * 
  * @package Aletheia
+ * 
+ * @author andrezrv
  */
 body {
   background-color: #ededed;
@@ -115,7 +117,7 @@ body.wide #branding .navbar .brand h2,
 body.large #branding .navbar .brand h2,
 body.medium #branding .navbar .brand h2 {
   color: #ffffff;
-  background-color: rgba(204, 0, 0, 0.5);
+  background-color: #e37373;
   display: inline;
   font-size: 24px;
   padding: 3px 10px;
@@ -147,21 +149,21 @@ body.medium.home #top-navbar .brand {
 header#header {
   background-color: transparent;
 }
-header #top-navbar {
+header#header #top-navbar {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.23);
 }
-header #top-navbar .brand h1 {
+header#header #top-navbar .brand h1 {
   font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
   font-weight: normal;
 }
-header #top-navbar .brand h1 a {
+header#header #top-navbar .brand h1 a {
   background-color: #e37373;
   color: #ffffff;
   display: block;
   padding: 0 15px;
   text-shadow: 0 1px 0 #2e3639;
 }
-header .sub-menu.dropdown-menu {
+header#header .navbar-inner .sub-menu.dropdown-menu {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -170,14 +172,25 @@ header .sub-menu.dropdown-menu {
   border: medium none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
 }
-header .sub-menu:not(.dropdown-menu) li {
+header#header .navbar-inner .sub-menu:not(.dropdown-menu) li {
   padding: 0;
 }
-header .sub-menu:not(.dropdown-menu) li a:hover {
+header#header .navbar-inner .sub-menu:not(.dropdown-menu) li a:hover {
   background-image: linear-gradient(#e37373, #e37373);
 }
-header .sub-menu:not(.dropdown-menu) li:hover {
+header#header .navbar-inner .sub-menu:not(.dropdown-menu) li:hover {
   background-color: #ffffff;
+}
+#breadcrumbs {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: auto;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
+}
+#breadcrumbs p {
+  margin: 0;
 }
 article {
   background-color: #ffffff;
@@ -194,12 +207,14 @@ article ul li,
 article ol li {
   line-height: 24px;
 }
-article header {
+article header,
+article header.page-header {
   border-bottom: 1px solid #ededed;
   margin: 0;
   padding: 25px 25px 20px;
 }
-article header h2 {
+article header h2,
+article header.page-header h2 {
   font-size: 43px;
   margin-bottom: -1px;
 }
@@ -298,7 +313,7 @@ article #authorarea {
   background-color: transparent;
   border-top: 1px solid #ededed;
   margin: 15px -25px 0;
-  padding: 15px 25px;
+  padding: 15px 25px 0;
 }
 article #authorarea .gravatar img {
   margin: 0;
@@ -308,8 +323,8 @@ article #authorarea .authorinfo h3 {
 }
 article #post-navigation-bottom {
   border-top: 1px solid #ededed;
-  margin: 0 -25px;
-  padding: 15px 25px 0;
+  margin: 0 0;
+  padding: 15px 25px;
 }
 article h1,
 article h2,

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * NOTICE: This file is part of the Alétheia child theme for the Agnosia framework.
+ * NOTICE: This file is part of the Alétheia child theme for the Agnosia Theme Framework.
  * You can edit this file without altering the original Agnosia core.
  *
  * This file handles Agnosia theme styles registration for the Alétheia child theme.
@@ -11,11 +11,10 @@
  * For further information, visit @link http://codex.wordpress.org/Function_Reference/add_action and @link http://codex.wordpress.org/Function_Reference/add_filter.
  * 
  * @package Alétheia
+ * 
+ * @author andrezrv
  */
 
-?>
-
-<?php
 
 /**
  * The following lines are commented by default in order to prevent the execution of unnecessary processes,
@@ -29,7 +28,6 @@
  * 3) set the parameter $custom_boostrap of agnosia_register_style() to true.
  * To customize Boostrap, we suggest to use @link http://fancyboot.designspebam.com/.
  */
-
 function agnosia_aletheia_load_styles() {
 	
 	agnosia_register_style( 'agnosia-aletheia' , 'Al&eacute;theia' , $custom_bootstrap = true ); // This sets a new selectable style for your child theme.
@@ -38,7 +36,5 @@ function agnosia_aletheia_load_styles() {
 
 
 
-/* Add action hooks. */
+// Add action hooks.
 add_action( 'agnosia_before_setup', 'agnosia_aletheia_load_styles' );
-
-?>

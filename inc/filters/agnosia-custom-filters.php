@@ -1,7 +1,7 @@
 <?php
 
 /**
- * NOTICE: This file is part of the Alétheia child theme for the Agnosia framework.
+ * NOTICE: This file is part of the Alétheia child theme for the Agnosia Theme Framework.
  * Please don't modify this file. If you need to perform modifications, do it through /inc/utils/agnosia-extra-functions.php
  *
  * This file handles filters for default WordPress functions and Agnosia functions.
@@ -10,6 +10,8 @@
  * For further information, visit @link http://codex.wordpress.org/Function_Reference/add_action and @link http://codex.wordpress.org/Function_Reference/add_filter.
  * 
  * @package Alétheia
+ * 
+ * @author andrezrv
  */
 
 
@@ -41,11 +43,9 @@ function agnosia_aletheia_filter_footer_credits( $html ) {
 
 function agnosia_aletheia_filter_branding_navbar_class( $text ) {
 
-	if ( agnosia_evaluate( 'content_hide_branding_not_frontpage' ) and !is_front_page() ) :
-
+	if ( agnosia_evaluate( 'content_hide_branding_not_frontpage' ) and !is_front_page() ) {
 		$text = $text . ' not-frontpage';
-
-	endif;
+	}
 
 	return $text;
 
@@ -66,6 +66,3 @@ add_filter( 'agnosia_get_template_content_page-navigation', 'agnosia_aletheia_fi
 add_filter( 'agnosia_get_template_footer_footer-credits', 'agnosia_aletheia_filter_footer_credits' );
 add_filter( 'agnosia_branding_navbar_class', 'agnosia_aletheia_filter_branding_navbar_class' );
 add_filter( 'agnosia_get_template_sidebar_right-sidebar', 'agnosia_aletheia_filter_right_sidebar' );
-
-
-?>

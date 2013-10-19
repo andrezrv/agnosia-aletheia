@@ -1,7 +1,7 @@
 <?php
 
 /**
- * NOTICE: This file is part of the Alétheia child theme for the Agnosia framework.
+ * NOTICE: This file is part of the Alétheia child theme for the Agnosia Theme Framework.
  * Please don't modify this file. If you need to perform modifications, do it through /inc/utils/agnosia-extra-functions.php
  *
  * This file handles extra theme support for the Alétheia child theme.
@@ -9,13 +9,14 @@
  * For further information, visit @link http://codex.wordpress.org/Function_Reference/add_theme_support.
  * 
  * @package Alétheia
+ * 
+ * @author andrezrv
  */
 
 /**
  * Declare a global variable which stores an array of custom theme features to be unsupported.
  * Uncomment the lines for the features you need to unsupport.
  */
-
 function agnosia_aletheia_finalize_custom_theme_support() {
 
 	global $agnosia_aletheia_custom_not_supported;
@@ -33,7 +34,6 @@ function agnosia_aletheia_finalize_custom_theme_support() {
 /**
  * Remove theme support for previously defined WordPress features.
  */
-
 function agnosia_aletheia_remove_custom_theme_support() {
 
 	global $agnosia_aletheia_custom_not_supported;
@@ -48,7 +48,6 @@ function agnosia_aletheia_remove_custom_theme_support() {
  * Initialize extra theme support for WordPress features.
  * Comment the lines for the features you don't need.
  */
-
 function agnosia_aletheia_initialize_wordpress_theme_support() {
 
 	global $agnosia_aletheia_wordpress_theme_support;
@@ -67,7 +66,6 @@ function agnosia_aletheia_initialize_wordpress_theme_support() {
 /**
  * Add extra theme support for previously defined WordPress features.
  */
-
 function agnosia_aletheia_add_wordpress_theme_support() {
 
 	global $agnosia_aletheia_wordpress_theme_support;
@@ -82,7 +80,6 @@ function agnosia_aletheia_add_wordpress_theme_support() {
  * Initialize extra theme support for Agnosia features.
  * Comment the lines for the features you don't need. 
  */
-
 function agnosia_aletheia_initialize_custom_theme_support() {
 
 	global $agnosia_aletheia_custom_theme_support;
@@ -107,7 +104,6 @@ function agnosia_aletheia_initialize_custom_theme_support() {
 /**
  * Add extra theme support for previously defined Agnosia features.
  */
-
 function agnosia_aletheia_add_custom_theme_support() {
 
 	global $agnosia_aletheia_custom_theme_support;
@@ -118,16 +114,10 @@ function agnosia_aletheia_add_custom_theme_support() {
 
 
 
-/**
- * Add action filters. 
- */
-
+// Add action filters.
 add_action( 'agnosia_before_setup', 'agnosia_aletheia_finalize_custom_theme_support' );
 add_action( 'agnosia_before_setup', 'agnosia_aletheia_remove_custom_theme_support' );
 add_action( 'agnosia_before_setup', 'agnosia_aletheia_initialize_wordpress_theme_support' );
 add_action( 'agnosia_before_setup', 'agnosia_aletheia_initialize_custom_theme_support' );
 add_action( 'agnosia_before_setup', 'agnosia_aletheia_add_wordpress_theme_support' );
 add_action( 'agnosia_before_setup', 'agnosia_aletheia_add_custom_theme_support' );
-
-
-?>

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * NOTICE: This file is part of the Alétheia child theme for the Agnosia framework.
+ * NOTICE: This file is part of the Alétheia child theme for the Agnosia Theme Framework.
  * Please don't modify this file. If you need to perform modifications, do it through /inc/utils/agnosia-extra-functions.php
  *
  * This file handles registration of custom javascript files.
@@ -10,6 +10,8 @@
  * For further information, visit @link http://codex.wordpress.org/Function_Reference/add_action and @link http://codex.wordpress.org/Function_Reference/add_filter.
  * 
  * @package Alétheia
+ * 
+ * @author andrezrv
  */
 
 
@@ -23,9 +25,9 @@ function agnosia_aletheia_enqueue_scripts() {
 
 	$file = agnosia_get_uri( '/js/agnosia-extra-scripts.js' );
 
-	if ( $file ) :         
+	if ( $file ) {    
 		wp_enqueue_script( 'agnosia.extra.scripts' , $file , array() , '1.0' );     
-	endif;
+	}
 
 }
 
@@ -33,5 +35,3 @@ function agnosia_aletheia_enqueue_scripts() {
 
 /* Add action hooks. */
 add_action( 'wp_enqueue_scripts', 'agnosia_aletheia_enqueue_scripts' );
-
-?>

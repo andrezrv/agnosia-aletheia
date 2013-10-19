@@ -1,7 +1,7 @@
 <?php
 
 /**
- * NOTICE: This file is part of the Alétheia child theme for the Agnosia framework.
+ * NOTICE: This file is part of the Alétheia child theme for the Agnosia Theme Framework.
  * Please don't modify this file. If you need to perform modifications, do it through /inc/utils/agnosia-extra-functions.php
  *
  * This file handles exclusive visualization functions for the Alétheia child theme.
@@ -10,6 +10,8 @@
  * For further information, visit @link http://codex.wordpress.org/Function_Reference/add_action and @link http://codex.wordpress.org/Function_Reference/add_filter.
  * 
  * @package Alétheia
+ * 
+ * @author andrezrv
  */
 
 
@@ -18,7 +20,6 @@
  * Load a conditional file for extra functions to prevent overwriting 
  * of child theme's functionality on updates. 
  */
-
 function agnosia_aletheia_load_extra_functions() {
 
 	require_once get_template_directory() . '/inc/utils/agnosia-file-getter.php';
@@ -35,11 +36,8 @@ function agnosia_aletheia_load_extra_functions() {
 
 
 
-/* Add action filters. */
-
+// Add action filters.
 add_action( 'agnosia_after_init', 'agnosia_aletheia_load_extra_functions' );
 
 
 /* Add your own functions after this line. */
-
-?>

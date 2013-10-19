@@ -5,6 +5,8 @@
  * This file should only handle styles for the Alétheia child theme.
  * 
  * @package Aletheia
+ * 
+ * @author andrezrv
  */
 
 @white: #FFFFFF;
@@ -127,7 +129,7 @@ body.page-template-page-large-header-php {
 	 		}
 	 		h2 {
 	 			color: @white;
-	 			background-color: rgba(204, 0, 0, 0.5);
+	 			background-color: @lightRed;
 	 			display: inline;
 	 			font-size: 24px;
 	 			padding: 3px 10px;
@@ -153,12 +155,12 @@ body.page-template-page-large-header-php {
 			}
 		}
 	}
- }
+}
 
- header {
- 	&#header {
-	 	background-color: transparent;
-	}
+header#header {
+ 	
+ 	background-color: transparent;
+	
 	#top-navbar {
 		.brand {
 			h1 {
@@ -174,32 +176,45 @@ body.page-template-page-large-header-php {
 		}
 		.shadowed(0 0 15px rgba(0,0,0,0.23));
 	}
-	.sub-menu.dropdown-menu {
-		.border-radius(0);
-		border: medium none;
-		.shadowed(0 0 8px rgba(0, 0, 0, 0.18));
-	}
-	.sub-menu:not(.dropdown-menu) {
 
-		li {
+	.navbar-inner {
 
-			padding: 0;
+		.sub-menu.dropdown-menu {
+			.border-radius(0);
+			border: medium none;
+			.shadowed(0 0 8px rgba(0, 0, 0, 0.18));
+		}
+		.sub-menu:not(.dropdown-menu) {
 
-			a {
+			li {
+
+				padding: 0;
+
+				a {
+
+					&:hover {
+						background-image: linear-gradient(@lightRed, @lightRed);
+					}
+
+				}
 
 				&:hover {
-					background-image: linear-gradient(@lightRed, @lightRed);
+					background-color: @white;
 				}
 
 			}
 
-			&:hover {
-				background-color: @white;
-			}
-
 		}
-
+		
 	}
+
+ }
+
+ #breadcrumbs {
+ 	.box;
+ 	p {
+ 		margin: 0;
+ 	}
  }
 
  article {
@@ -213,7 +228,7 @@ body.page-template-page-large-header-php {
  		line-height: 24px;
  	}
 
- 	header {
+ 	header, header.page-header {
 
  		border-bottom: 1px solid @lightGrey;
 	    margin: 0;
@@ -329,7 +344,7 @@ body.page-template-page-large-header-php {
  		background-color: transparent;
 	    border-top: 1px solid @lightGrey;
 	    margin: 15px -25px 0;
-	    padding: 15px 25px;
+	    padding: 15px 25px 0;
 	    .gravatar img {
 	    	margin: 0;
 	    }
@@ -340,8 +355,8 @@ body.page-template-page-large-header-php {
 
  	#post-navigation-bottom {
 	    border-top: 1px solid @lightGrey;
-	    margin: 0 -25px;
-	    padding: 15px 25px 0;
+	    margin: 0 0;
+	    padding: 15px 25px;
 	}
 
  	h1, h2, h3 {

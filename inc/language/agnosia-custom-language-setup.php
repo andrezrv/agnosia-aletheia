@@ -1,7 +1,7 @@
 <?php
 
 /**
- * NOTICE: This file is part of the Alétheia child theme for the Agnosia framework.
+ * NOTICE: This file is part of the Alétheia child theme for the Agnosia Theme Framework.
  * Please don't modify this file. If you need to perform modifications, do it through /inc/utils/agnosia-extra-functions.php
  *
  * This file handles text domains for the Alétheia child theme.
@@ -9,8 +9,9 @@
  * This file is empty by default. For an example about how it should work, see wp-content/themes/agnosia/inc/languages/agnosia-language-setup.php
  * 
  * @package Alétheia
+ * 
+ * @author andrezrv
  */
-
 
 
 function agnosia_aletheia_language_setup() {
@@ -20,8 +21,5 @@ function agnosia_aletheia_language_setup() {
 }
 
 
-/* Add action hooks. */
+// Add action hooks.
 add_action( 'after_setup_theme' , 'agnosia_aletheia_language_setup' );
-
-
-?>
