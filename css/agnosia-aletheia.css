@@ -218,9 +218,6 @@ article header.page-header h2 {
   font-size: 43px;
   margin-bottom: -1px;
 }
-article .gravatar {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
-}
 article .post-thumbnail {
   margin: -1px 0 0;
 }
@@ -782,6 +779,16 @@ body.wide .dropdown-toggle + .dropdown-menu,
 body.large .dropdown-toggle + .dropdown-menu {
   margin-top: 0;
   padding: 0;
+}
+div.sharedaddy,
+#content div.sharedaddy,
+#main div.sharedaddy {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+div.sharedaddy div.sd-block {
+  border-top: 1px solid #ededed !important;
+  padding: 10px 25px !important;
 }
 #credits .container {
   font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
