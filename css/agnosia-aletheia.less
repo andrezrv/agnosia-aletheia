@@ -533,7 +533,7 @@ header#header {
  		}
  	}
  	> ul {
- 		margin-top: -16px;
+ 		margin-top: -15px;
  		li:hover {
  			background-color: #F9F9F9;
  		}
@@ -745,8 +745,17 @@ body.small .metadata section {
 	border-top-color: transparent;
 }
 
-.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
+.navbar-inverse .nav-collapse .nav > li > a, 
+.navbar-inverse .nav-collapse .dropdown-menu a {
 	.border-radius(0);
+
+}
+
+.navbar-inverse .nav .active > a, 
+.navbar-inverse .nav .active > a:hover, 
+.navbar-inverse .nav .active > a:focus {
+	background-color: rgba(0, 0, 0, 0.25);
+	box-shadow: none;
 }
 
 button.btn.btn-large, input.btn.btn-large[type="submit"] {
