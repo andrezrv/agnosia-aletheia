@@ -16,7 +16,7 @@
 
 function agnosia_aletheia_language_setup() {
 	
-	load_theme_textdomain( 'aletheia' , agnosia_get_path( '/languages' ) );;
+	load_theme_textdomain( 'aletheia' , get_stylesheet_directory() . '/languages' );
 	
 }
 
