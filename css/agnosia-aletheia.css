@@ -463,7 +463,6 @@ article footer {
 #archive-container > .entry h4 {
   font-family: 'Alice', 'Georgia', 'Times New Roman', serif;
   font-weight: normal;
-  margin: 0;
 }
 #comments-container {
   background-color: #ffffff;
@@ -545,8 +544,8 @@ article footer {
 .sidebar .widget.widget_facebook_likebox iframe {
   width: 100% !important;
 }
-.sidebar .widget.widget_search {
-  overflow: hidden;
+.sidebar .widget.widget_search .navbar-search {
+  float: none;
 }
 footer#footer {
   background-color: #2e3639;
