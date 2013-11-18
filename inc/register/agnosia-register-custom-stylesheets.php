@@ -23,9 +23,11 @@ function agnosia_aletheia_enqueue_styles() {
 
 	$file = agnosia_get_uri( '/css/agnosia-extra-styles.css' );
 
-	if ( $file ) :         
-		wp_enqueue_style( 'agnosia.extra.styles' , $file , array() , '1.0' );     
-	endif;
+	if ( file_exists( $file ) ) {
+		
+		wp_enqueue_style( 'agnosia.extra.styles' , $file , array() , '1.0' );
+		
+	}
 
 }
 
