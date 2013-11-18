@@ -13,13 +13,14 @@
  * @author andrezrv
  */
 
-
 function agnosia_aletheia_language_setup() {
-	
-	load_theme_textdomain( 'aletheia' , get_stylesheet_directory() . '/languages' );
+
+	global $agnosia_child_theme_textdomains;
+
+	$agnosia_child_theme_textdomains = array( 'aletheia' );
 	
 }
 
 
 // Add action hooks.
-add_action( 'after_setup_theme' , 'agnosia_aletheia_language_setup' );
+add_action( 'agnosia_load_child_theme_textdomains' , 'agnosia_aletheia_language_setup' );
