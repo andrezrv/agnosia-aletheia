@@ -786,6 +786,15 @@ div.sharedaddy,
   margin-left: -25px;
   margin-right: -25px;
 }
+div.sharedaddy .sd-content,
+#content div.sharedaddy .sd-content,
+#main div.sharedaddy .sd-content {
+  float: none;
+}
+.sd-block {
+  padding: 0 25px;
+  width: auto !important;
+}
 div.sharedaddy div.sd-block {
   border-top: 1px solid #ededed !important;
   padding: 10px 25px !important;
