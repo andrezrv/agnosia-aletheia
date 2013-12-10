@@ -29,7 +29,7 @@ function agnosia_aletheia_filter_page_navigation( $html ) {
 function agnosia_aletheia_filter_footer_credits( $html ) {
 
 	$filter = '<span class="agnosia">Agnosia</span> Theme</span>';
-	$new_html = '<span class="aletheia">' . sprintf( __( 'Al&eacute;theia Theme was built with %1$sAgnosia Theme Framework%2$s', 'aletheia' ), '<a href="http://a.gnosia.com.ar">', '</a>' ) . '</span> ';
+	$new_html = '<span class="aletheia">' . sprintf( __( 'Al&eacute;theia Theme was built with %1$sAgnosia Theme Framework%2$s', 'aletheia' ), '<a href="http://github.com/andrezrv/agnosia">', '</a>' ) . '</span> ';
 	$new_html .= '<span class="wordpress">' . sprintf( __( 'Proudly Powered by %1$sWordPress%2$s', 'aletheia' ), '<a href="http://www.wordpress.org">', '</a>' ) . '</span>';
 	$html = str_replace( $filter, $new_html, $html );
 	$html = str_replace( '<span>&copy;', '<span class="copyright">&copy;', $html );
